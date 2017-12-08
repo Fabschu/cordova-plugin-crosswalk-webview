@@ -4,7 +4,7 @@
 ## Installation
 
 ```
-cordova plugins add https://github.com/Fabschu/cordova-plugin-crosswalk-webview.git
+cordova plugins add https://github.com/Fabschu/cordova-plugin-crosswalk-webview
 ```
 
 Note that when you start with `cordova run android`, the app won't open automatically. This is due to a bug in cordova (as of now), of not inserting a space correctly when executing the `am` command. Open the app manually after deployment and it works fine.
@@ -17,7 +17,7 @@ The forked version of crosswalk won't execute the Xwalk web view if there's a ne
 To utilize modern es6 features in your app, you can create another .html in your www/ directory. Let's say you call it `es6index.html`. That can be passed to the plugin like this:
 
 ```
-cordova plugins add https://github.com/Fabschu/cordova-plugin-crosswalk-webview.git --variable MODERN_CHROME_ENTRY=es6index.html
+cordova plugins add https://github.com/Fabschu/cordova-plugin-crosswalk-webview --variable MODERN_CHROME_ENTRY=es6index.html
 ```
 
 If a new version of the Android System Webview is found, it will now run es6index.html as an entry point. This means utilizing `async`, `await`, and not haivng to rely on polyfills like `core-js` anymore. Fast startup time! There's still hope for mobile hybrid development.
